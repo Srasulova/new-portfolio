@@ -1,14 +1,14 @@
+"use client"
+
+import Hero from "./components/hero";
 
 
 export default function Home() {
   return (
-    <div className="b">
+    <div className="">
       <main className="">
-
+        <Hero />
       </main>
-      <footer className="">
-
-      </footer>
     </div>
   );
 }
