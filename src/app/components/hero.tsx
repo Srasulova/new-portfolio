@@ -17,25 +17,15 @@ export default function Hero() {
     return (
         <>
             {isLoaded && (
-                <div className="w-screen h-screen bg-gradient-to-b from-cyan-950 to-cyan-900 animate-slide-down flex items-center justify-between">
+                <div className="w-screen h-screen bg-gradient-to-b from-black to-gray-800 animate-slide-down flex items-center justify-between">
                     <div className="flex flex-col items-start">
                         <h1
-                            className="text-white text-7xl text-center font-mali opacity-0 transition ml-40 animate-slideIn delay-500 duration-700"
-                            style={{
-                                // filter:
-                                //     "drop-shadow(2px 2px 10px #db2777) drop-shadow(2px 0 15px #ffffff)",
-                                WebkitTextStroke: "1px white",
-                            }}
+                            className="text-lime-400 text-7xl text-center font-noto opacity-0 transition ml-40 animate-slideIn delay-500 duration-700"
                         >
                             Hi. I&apos;m Sabina.
                         </h1>
                         <p
-                            className="text-white text-5xl text-center pt-4 font-mali opacity-0 transition ml-40 animate-slideIn delay-1000 duration-700"
-                            style={{
-                                // filter:
-                                //     "drop-shadow(2px 2px 10px #db2777) drop-shadow(2px 0 15px #ffffff)",
-                                WebkitTextStroke: "1px white",
-                            }}
+                            className="text-lime-400 text-5xl text-center pt-4 font-noto opacity-0 transition ml-40 animate-slideIn delay-1000 duration-700"
                         >
                             I&apos;m a Software Engineer
                         </p>

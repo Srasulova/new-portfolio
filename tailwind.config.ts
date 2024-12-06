@@ -31,8 +31,12 @@ export default {
       },
       // Add custom fonts
       fontFamily: {
-        mali: ['"Mali"', "sans-serif"], // Mali font
-        source: ['"Source Code Pro"', "monospace"], // Source Code Pro font
+        noto: ['"Noto Sans"', "sans-serif"],
+        source: ['"Source Code Pro"', "serif"], // Source Code Pro font
+      },
+      colors: {
+        darkOrange: "#300d03",
+        lightOrange: "#a32805",
       },
     },
   },
