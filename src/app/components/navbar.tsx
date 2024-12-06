@@ -7,7 +7,7 @@ export default function Navbar() {
                 <ul role="list" className="space-y-2">
                     <li>
                         <Link
-                            href="#"
+                            href="#aboutMe"
                             className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
                         >
                             {/* Wrapper for the text */}

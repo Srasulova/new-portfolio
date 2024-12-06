@@ -40,12 +40,7 @@ export default function Hero() {
                         <div className="mt-10">
                             <ResumeButton />
                         </div>
-
-
                     </div>
-
-
-
                     <div className="mr-24">
                         <Navbar />
                     </div>
