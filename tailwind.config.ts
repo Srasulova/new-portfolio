@@ -8,28 +8,34 @@ export default {
   ],
   theme: {
     extend: {
-      // Add custom animation
+      // Add custom animations
       animation: {
         "slide-down": "slideDown 1s ease-in-out",
-        slideIn: "slideIn 2s ease-in forwards",
+        "clip-path-reveal-1": "clipPathReveal 3s ease forwards",
+        line: "lineAnimation 3s ease infinite alternate",
       },
       keyframes: {
         slideDown: {
           "0%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
-        slideIn: {
-          "0%": {
-            transform: "translateX(-100%)",
-            opacity: "0",
-          }, // Slide in from left
-          "100%": {
-            transform: "translateX(0)",
-            opacity: "1",
-          }, // To original position
+        clipPathReveal: {
+          "0%, 25%": {
+            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+          },
+          "50%": {
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+          },
+        },
+        lineAnimation: {
+          "0%": { transform: "scaleX(0)", top: "calc(100% - 2px)" },
+          "15%": { transform: "scaleX(0)", top: "calc(100% - 2px)" },
+          "20%, 25%": { transform: "scaleX(1)", top: "calc(100% - 2px)" },
+          "50%": { transform: "scaleX(1)", top: "0" },
+          "70%": { transform: "scaleX(0.2)", top: "0" },
+          "80%, 100%": { transform: "scaleX(0.2)", top: "0" },
         },
       },
-      // Add custom fonts
       fontFamily: {
         noto: ['"Noto Sans"', "sans-serif"],
         source: ['"Source Code Pro"', "serif"], // Source Code Pro font

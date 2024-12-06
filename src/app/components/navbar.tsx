@@ -8,61 +8,73 @@ export default function Navbar() {
                     <li>
                         <Link
                             href="#"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400"
-                            style={{
-                                transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
-                            }}
-                            onMouseEnter={(e) => {
-                                (e.target as HTMLElement).style.filter =
-                                    "drop-shadow(1px 0 8px #ffffff)";
-                                (e.target as HTMLElement).style.webkitTextStroke = "2px white";
-                            }}
-                            onMouseLeave={(e) => {
-                                (e.target as HTMLElement).style.filter = "";
-                                (e.target as HTMLElement).style.webkitTextStroke = "";
-                            }}
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
                         >
-                            About me
+                            {/* Wrapper for the text */}
+                            <span
+                                className="group-hover:drop-shadow-[1px_0_3px_#ffffff] transition-all duration-300 ease-out"
+                                style={{
+                                    transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "2px white";
+                                }}
+                                onMouseLeave={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "";
+                                }}
+                            >
+                                About me
+                            </span>
+                            {/* Red line under text */}
+                            <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="#"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400"
-                            style={{
-                                transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
-                            }}
-                            onMouseEnter={(e) => {
-                                (e.target as HTMLElement).style.filter =
-                                    "drop-shadow(1px 0 8px #ffffff)";
-                                (e.target as HTMLElement).style.webkitTextStroke = "2px white";
-                            }}
-                            onMouseLeave={(e) => {
-                                (e.target as HTMLElement).style.filter = "";
-                                (e.target as HTMLElement).style.webkitTextStroke = "";
-                            }}
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
                         >
-                            My Projects
+                            {/* Wrapper for the text */}
+                            <span
+                                className="group-hover:drop-shadow-[1px_0_3px_#ffffff] transition-all duration-300 ease-out"
+                                style={{
+                                    transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "2px white";
+                                }}
+                                onMouseLeave={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "";
+                                }}
+                            >
+                                My Projects
+                            </span>
+                            {/* Red line under text */}
+                            <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
                         </Link>
                     </li>
                     <li>
                         <Link
                             href="#"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400"
-                            style={{
-                                transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
-                            }}
-                            onMouseEnter={(e) => {
-                                (e.target as HTMLElement).style.filter =
-                                    "drop-shadow(1px 0 8px #ffffff)";
-                                (e.target as HTMLElement).style.webkitTextStroke = "2px white";
-                            }}
-                            onMouseLeave={(e) => {
-                                (e.target as HTMLElement).style.filter = "";
-                                (e.target as HTMLElement).style.webkitTextStroke = "";
-                            }}
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
                         >
-                            Contact me
+                            {/* Wrapper for the text */}
+                            <span
+                                className="group-hover:drop-shadow-[1px_0_3px_#ffffff] transition-all duration-300 ease-out"
+                                style={{
+                                    transition: "filter 0.3s ease, -webkit-text-stroke 0.3s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "2px white";
+                                }}
+                                onMouseLeave={(e) => {
+                                    (e.target as HTMLElement).style.webkitTextStroke = "";
+                                }}
+                            >
+                                Contact me
+                            </span>
+                            {/* Red line under text */}
+                            <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
                         </Link>
                     </li>
                 </ul>
