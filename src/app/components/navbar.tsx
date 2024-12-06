@@ -23,7 +23,7 @@ export default function Navbar() {
                                     (e.target as HTMLElement).style.webkitTextStroke = "";
                                 }}
                             >
-                                About me
+                                ABOUT ME
                             </span>
                             {/* Red line under text */}
                             <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
@@ -47,7 +47,7 @@ export default function Navbar() {
                                     (e.target as HTMLElement).style.webkitTextStroke = "";
                                 }}
                             >
-                                My Projects
+                                MY PROJECTS
                             </span>
                             {/* Red line under text */}
                             <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
@@ -71,7 +71,7 @@ export default function Navbar() {
                                     (e.target as HTMLElement).style.webkitTextStroke = "";
                                 }}
                             >
-                                Contact me
+                                CONTACT ME
                             </span>
                             {/* Red line under text */}
                             <span className="absolute left-0 bottom-0 w-full h-1 bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-out"></span>
