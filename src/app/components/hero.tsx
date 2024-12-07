@@ -27,12 +27,12 @@ export default function Hero() {
                             <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line"></div>
 
                             <h1
-                                className="text-teal-300 text-7xl  font-noto animate-clip-path-reveal-1"
+                                className="text-teal-300 text-5xl  font-noto animate-clip-path-reveal-1"
                             >
                                 Hi. I&apos;m Sabina.
                             </h1>
                             <p
-                                className="text-teal-300 text-5xl pt-4 font-noto animate-clip-path-reveal-1"
+                                className="text-teal-300 text-4xl pt-4 font-noto animate-clip-path-reveal-1"
                             >
                                 I&apos;m a Software Engineer
                             </p>

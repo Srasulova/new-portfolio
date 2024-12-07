@@ -2,9 +2,16 @@ export default function AboutMe() {
     return (
         <>
             <div className="bg-teal-300 w-full h-full animate-slide-down py-28">
-                <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-14 ">
-                    10 Fun Facts About Me
-                </h2>
+                <div className="flex flex-col relative">
+                    {/* Line Animation */}
+                    <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
+
+                    <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-14 font-noto animate-clip-path-reveal-1">
+                        10 Fun Facts About Me
+                    </h2>
+                </div>
+
+
 
                 <div className="flex justify-center items-center">
                     <div className="max-w-7xl flex justify-center gap-20">
@@ -19,7 +26,7 @@ export default function AboutMe() {
                                 </p>
                             </li>
                             <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black px-1 pt-12 pb-1">
+                                <span className="text-6xl text-red-600 font-black ">
                                     02
                                 </span>
                                 <p className="leading-relaxed">
