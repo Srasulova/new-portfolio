@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (<>
-        <div className="bg-lime-200 w-screen h-screen animate-slide-down">
+        <div className="bg-teal-200 w-screen h-screen animate-slide-down">
             <div className="w-full lg:max-w-xl lg:flex-auto ml-10 pt-10" >
 
                 <h2 className="text-3xl mb-6  font-bold tracking-wide text-black sm:text-4xl">About me</h2>

@@ -8,7 +8,7 @@ export default function Navbar() {
                     <li>
                         <Link
                             href="#aboutMe"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-teal-300 relative"
                         >
                             {/* Wrapper for the text */}
                             <span
@@ -32,7 +32,7 @@ export default function Navbar() {
                     <li>
                         <Link
                             href="#"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-teal-300 relative"
                         >
                             {/* Wrapper for the text */}
                             <span
@@ -56,7 +56,7 @@ export default function Navbar() {
                     <li>
                         <Link
                             href="#"
-                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-lime-400 relative"
+                            className="group font-nunito flex gap-x-3 rounded-md p-6 text-9xl font-semibold text-teal-300 relative"
                         >
                             {/* Wrapper for the text */}
                             <span
