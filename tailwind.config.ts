@@ -11,7 +11,7 @@ export default {
       // Add custom animations
       animation: {
         "slide-down": "slideDown 1s ease-in-out",
-        "clip-path-reveal-1": "clipPathReveal 3s ease forwards",
+        "clip-path-reveal-1": "clipPathReveal 3s ease infinite alternate",
         line: "lineAnimation 3s ease infinite alternate",
       },
       keyframes: {
@@ -21,10 +21,10 @@ export default {
         },
         clipPathReveal: {
           "0%, 25%": {
-            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)", // Hidden
           },
           "50%": {
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", // Fully visible
           },
         },
         lineAnimation: {

@@ -1,19 +1,103 @@
 export default function AboutMe() {
-    return (<>
-        <div className="bg-teal-200 w-screen h-screen animate-slide-down">
-            <div className="w-full lg:max-w-xl lg:flex-auto ml-10 pt-10" >
+    return (
+        <>
+            <div className="bg-teal-300 w-full h-full animate-slide-down py-28">
+                <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-14 ">
+                    10 Fun Facts About Me
+                </h2>
 
-                <h2 className="text-3xl mb-6  font-bold tracking-wide text-black sm:text-4xl">About me</h2>
+                <div className="flex justify-center items-center">
+                    <div className="max-w-7xl flex justify-center gap-20">
+                        {/* Left Column */}
+                        <ul className="list-none text-gray-900 tracking-wide space-y-7">
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black">
+                                    01
+                                </span>
+                                <p className="leading-relaxed px-1 ">
+                                    <strong className="text-xl">I Speak 5 Languages:</strong> Azerbaijani is my native tongue, but I also speak Russian, English, Turkish, and Spanish. It’s like having a cheat code for connecting with people.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black px-1 pt-12 pb-1">
+                                    02
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Food Lover Turned Developer:</strong> My love for food inspired my first full-stack app, a restaurant critique platform. It was the perfect mix of my passions for food and coding.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    03
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Baseball and Me:</strong> I built <em>Moneyball</em>, a customized baseball stats app, during peak baseball season. Funny enough, I knew nothing about baseball, but I loved working with fresh daily data.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    04
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>I Don’t Quit:</strong> I’m all about finding solutions and getting the job done, even if it means learning on the fly. No challenge is too big for my determination.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    05
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>From Listening to Building:</strong> My 15+ years in customer service taught me how to listen and understand people’s needs. Now, I channel that into creating user-friendly apps.
+                                </p>
+                            </li>
+                        </ul>
 
-                <p className="mb-3 text-gray-900 tracking-wide">Hi, I’m <span className='text-red-600 font-bold'>Sabina</span>, a web developer with a passion for crafting seamless, user-focused digital experiences. After over 15 years in customer service, I made a significant career shift into tech, driven by a desire to build solutions that make a real impact. I started with self-learning, but to deepen my expertise, I completed a full-stack bootcamp, which solidified my love for development. </p>
-
-                <p className="mb-3  text-gray-900 tracking-wide">My background in customer service gives me a unique edge — I know how to listen to users and translate their needs into intuitive, polished applications. Whether it’s enhancing existing features or creating new ones, I approach challenges with curiosity and a commitment to continuous improvement.</p>
-
-                <p className="mb-3  text-gray-900 tracking-wide">While I’m open to roles across the stack, front-end development is where I truly thrive. The blend of creativity and precision energizes me, and I love bringing designs to life with pixel-perfect execution. Juggling the world of tech with motherhood, I’m always ready to embrace new challenges and keep learning along the way.</p>
-
-                <p className="mb-3  text-gray-900 tracking-wide">Based in Connecticut, I’m seeking entry-level opportunities, internships, or junior roles where I can contribute and grow. If you’re looking for someone with a user-centered mindset and a passion for creating beautiful, functional web experiences, let’s connect!
-                </p>
+                        {/* Right Column */}
+                        <ul className="list-none text-gray-900 tracking-wide space-y-7">
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    06
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Front-End Is My Happy Place:</strong> I enjoy full-stack work, but front-end development is where I thrive. Bringing designs to life, pixel by pixel, is where I find my groove.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    07
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Azerbaijan in My Heart 🇦🇿:</strong> I’m originally from Azerbaijan, and my roots shape my approach to challenges and opportunities.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    08
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Practical Over Perfect:</strong> I might forget some fancy terminology now and then, but I know how to make things work. Hands-on problem-solving is where I excel.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    09
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>Juggling Life and Code:</strong> Balancing motherhood and building a career in tech has taught me to focus, prioritize, and stay adaptable.
+                                </p>
+                            </li>
+                            <li className="flex gap-3 items-end">
+                                <span className="text-6xl text-red-600 font-black  ">
+                                    10
+                                </span>
+                                <p className="leading-relaxed">
+                                    <strong>I Keep Things Spicy:</strong> I dive into new projects and challenges with curiosity, enthusiasm, and a good sense of humor. After all, coding should be fun!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </>)
+        </>
+    );
 }
