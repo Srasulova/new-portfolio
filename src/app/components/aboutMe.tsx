@@ -1,108 +1,55 @@
 export default function AboutMe() {
     return (
         <>
-            <div className="bg-teal-300 w-full h-full animate-slide-down py-28">
-                <div className="flex flex-col relative">
-                    {/* Line Animation */}
-                    <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
+            <div className="bg-teal-300 w-full h-full animate-slide-down py-24">
 
-                    <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-14 font-noto animate-clip-path-reveal-1">
-                        10 Fun Facts About Me
-                    </h2>
+                <div className="max-w-7xl mx-auto">
+                    <button className="flex gap-1 text-gray-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg> Back
+                    </button>
                 </div>
 
 
 
+                <div className="flex flex-col relative">
+                    {/* Line Animation */}
+                    <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
+
+                    <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-12 font-noto animate-clip-path-reveal-1">
+                        10 Fun Facts About Me
+                    </h2>
+                </div>
+
                 <div className="flex justify-center items-center">
                     <div className="max-w-7xl flex justify-center gap-20">
                         {/* Left Column */}
-                        <ul className="list-none text-gray-900 tracking-wide space-y-7">
+                        <ul className="list-none text-gray-900 tracking-wide flex space-x-8">
                             <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black">
-                                    01
-                                </span>
-                                <p className="leading-relaxed px-1 ">
-                                    <strong className="text-xl">I Speak 5 Languages:</strong> Azerbaijani is my native tongue, but I also speak Russian, English, Turkish, and Spanish. It’s like having a cheat code for connecting with people.
+                                <span className="text-6xl text-red-600 font-black">1</span>
+                                <p className="leading-relaxed px-1">
+                                    Give me a bug or an error I’ve never seen before, and I’ll show you the power of stubborn optimism. If it takes 100 tries, so be it—<strong>I’ll get it working</strong>, and I’ll learn something new every time.
                                 </p>
                             </li>
                             <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black ">
-                                    02
-                                </span>
+                                <span className="text-6xl text-red-600 font-black">10</span>
                                 <p className="leading-relaxed">
-                                    <strong>Food Lover Turned Developer:</strong> My love for food inspired my first full-stack app, a restaurant critique platform. It was the perfect mix of my passions for food and coding.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    03
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>Baseball and Me:</strong> I built <em>Moneyball</em>, a customized baseball stats app, during peak baseball season. Funny enough, I knew nothing about baseball, but I loved working with fresh daily data.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    04
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>I Don’t Quit:</strong> I’m all about finding solutions and getting the job done, even if it means learning on the fly. No challenge is too big for my determination.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    05
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>From Listening to Building:</strong> My 15+ years in customer service taught me how to listen and understand people’s needs. Now, I channel that into creating user-friendly apps.
-                                </p>
-                            </li>
-                        </ul>
-
-                        {/* Right Column */}
-                        <ul className="list-none text-gray-900 tracking-wide space-y-7">
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    06
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>Front-End Is My Happy Place:</strong> I enjoy full-stack work, but front-end development is where I thrive. Bringing designs to life, pixel by pixel, is where I find my groove.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    07
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>Azerbaijan in My Heart 🇦🇿:</strong> I’m originally from Azerbaijan, and my roots shape my approach to challenges and opportunities.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    08
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>Practical Over Perfect:</strong> I might forget some fancy terminology now and then, but I know how to make things work. Hands-on problem-solving is where I excel.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    09
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>Juggling Life and Code:</strong> Balancing motherhood and building a career in tech has taught me to focus, prioritize, and stay adaptable.
-                                </p>
-                            </li>
-                            <li className="flex gap-3 items-end">
-                                <span className="text-6xl text-red-600 font-black  ">
-                                    10
-                                </span>
-                                <p className="leading-relaxed">
-                                    <strong>I Keep Things Spicy:</strong> I dive into new projects and challenges with curiosity, enthusiasm, and a good sense of humor. After all, coding should be fun!
+                                    I’ve always had an eye for <strong>making things work better</strong>—whether it’s simplifying a process, cleaning up code, or organizing my thoughts. If it can be optimized, I’ll find a way to make it flow a little smoother.
                                 </p>
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div className="mt-20 max-w-7xl mx-auto">
+                    <p className="text-center text-sm text-gray-800 font-normal italic">
+                        Outside of coding, I’m a proud mom who speaks five languages (Azerbaijani, Russian, English, Turkish, and Spanish). With over 15 years of customer service experience, I’m used to collaborating with diverse teams, communicating effectively, and building strong relationships. I’m always looking for ways to grow, both professionally and personally.
+                    </p>
+                </div>
+                <div className="mt-8">
+                    <p className="text-center text-lg text-gray-800 font-semibold">
+                        Always learning, always growing.
+                    </p>
                 </div>
             </div>
         </>
