@@ -10,8 +10,6 @@ export default function AboutMe() {
                     </button>
                 </div>
 
-
-
                 <div className="flex flex-col relative">
                     {/* Line Animation */}
                     <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
