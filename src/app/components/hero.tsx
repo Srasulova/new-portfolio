@@ -22,7 +22,7 @@ export default function Hero({ setIsAboutMeOpen }: HeroProps) {
     return (
         <>
             {isLoaded && (
-                <div className="w-screen h-screen bg-gradient-to-b from-black to-gray-700 flex items-center justify-between animate-slide-down">
+                <div className="w-screen h-screen bg-gradient-to-b from-black to-gray-700 flex items-center justify-between animate-slide-down delay-1000">
                     {/* Text and Animation */}
 
                     <div className="flex flex-col items-start ml-32">

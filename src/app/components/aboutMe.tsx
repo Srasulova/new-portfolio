@@ -1,10 +1,10 @@
 type AboutMeProps = {
     handleBackButtonClick: () => void;
     isClosing: boolean;
-}
+    onAnimationEnd: () => void;
+};
 
-export default function AboutMe({ handleBackButtonClick, isClosing }: AboutMeProps) {
-
+export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationEnd }: AboutMeProps) {
     return (
         <>
             {/* Modal Background */}
@@ -13,7 +13,7 @@ export default function AboutMe({ handleBackButtonClick, isClosing }: AboutMePro
             <div className="fixed inset-0 z-10 w-full overflow-y-auto flex justify-center items-center px-10">
                 <div
                     className={`relative bg-teal-300 w-full py-24 rounded-lg shadow-md shadow-teal-50 ${isClosing ? "animate-slide-up" : "animate-slide-down"}`}
-                    onAnimationEnd={isClosing ? handleBackButtonClick : undefined}
+                    onAnimationEnd={onAnimationEnd} // Ensure component is removed after animation
                 >
                     <div className="max-w-7xl mx-auto">
                         <button className="flex gap-1 text-gray-800" onClick={handleBackButtonClick}>
@@ -61,7 +61,7 @@ export default function AboutMe({ handleBackButtonClick, isClosing }: AboutMePro
 
                     <div className="mt-8">
                         <p className="text-center text-lg text-gray-800 font-semibold">
-                            Always learning, always growing.
+                            Always learning<span className="text-red-600">,</span> always growing<span className="text-red-600">.</span>
                         </p>
                     </div>
                 </div>
