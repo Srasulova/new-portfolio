@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import Navbar from "./navbar";
 import ResumeButton from "./resumeButton";
 
-export default function Hero() {
+type HeroProps = {
+    setIsAboutMeOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function Hero({ setIsAboutMeOpen }: HeroProps) {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -42,7 +46,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="mr-24">
-                        <Navbar />
+                        <Navbar setIsAboutMeOpen={setIsAboutMeOpen} />
                     </div>
                 </div>
             )}

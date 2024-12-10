@@ -11,6 +11,7 @@ export default {
       // Add custom animations
       animation: {
         "slide-down": "slideDown 1s ease-in-out",
+        "slide-up": "slideUp 1s ease-in-out",
         "clip-path-reveal-1": "clipPathReveal 3s ease infinite alternate",
         line: "lineAnimation 3s ease infinite alternate",
       },
@@ -18,6 +19,10 @@ export default {
         slideDown: {
           "0%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0)", opacity: "1" },
+          "100%": { transform: "translateY(-100%)", opacity: "0" },
         },
         clipPathReveal: {
           "0%, 25%": {
@@ -40,10 +45,7 @@ export default {
         noto: ['"Noto Sans"', "sans-serif"],
         source: ['"Source Code Pro"', "serif"], // Source Code Pro font
       },
-      colors: {
-        darkOrange: "#300d03",
-        lightOrange: "#a32805",
-      },
+      colors: {},
     },
   },
   plugins: [],

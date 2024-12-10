@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-export default function Navbar() {
+type NavbarProps = {
+    setIsAboutMeOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Navbar({ setIsAboutMeOpen }: NavbarProps) {
     return (
         <>
             <nav className="flex flex-1 flex-col" aria-label="Sidebar">
@@ -9,6 +13,7 @@ export default function Navbar() {
                         <Link
                             href="#aboutMe"
                             className="group font-nunito flex gap-x-3 rounded-md p-6 text-8xl font-semibold text-teal-300 relative"
+                            onClick={() => setIsAboutMeOpen(true)}
                         >
                             {/* Wrapper for the text */}
                             <span
