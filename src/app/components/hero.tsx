@@ -25,7 +25,7 @@ export default function Hero({ setIsAboutMeOpen }: HeroProps) {
                 <div className="w-screen h-screen bg-gradient-to-b from-black to-gray-700 flex items-center justify-around animate-slide-down delay-1000">
                     {/* Text and Animation */}
 
-                    <div className="flex flex-col items-start ml-32">
+                    <div className="flex flex-col items-start ml-32 animate-slide-down">
                         <div className="flex flex-col relative">
                             {/* Line Animation */}
                             <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line"></div>
