@@ -14,6 +14,7 @@ export default {
         "slide-up": "slideUp 1s ease-in-out",
         "clip-path-reveal-1": "clipPathReveal 3s ease infinite alternate",
         line: "lineAnimation 3s ease infinite alternate",
+        "gradient-border": "gradient-border 6s ease infinite", // Add gradient animation
       },
       keyframes: {
         slideDown: {
@@ -40,13 +41,16 @@ export default {
           "70%": { transform: "scaleX(0.2)", top: "0" },
           "80%, 100%": { transform: "scaleX(0.2)", top: "0" },
         },
+        "gradient-border": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
       },
       fontFamily: {
         noto: ['"Noto Sans"', "sans-serif"],
         porietOne: ["Poiret One", "sans-serif"],
         source: ['"Source Code Pro"', "serif"], // Source Code Pro font
       },
-      colors: {},
     },
   },
   plugins: [],

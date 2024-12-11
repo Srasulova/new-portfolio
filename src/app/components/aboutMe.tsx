@@ -1,3 +1,6 @@
+import FlipCardComponent from "./cards";
+
+
 type AboutMeProps = {
     handleBackButtonClick: () => void;
     isClosing: boolean;
@@ -10,26 +13,41 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
             {/* Modal Background */}
             <div className="fixed inset-0 bg-gray-800/50 transition-opacity" aria-hidden="true"></div>
 
-            <div className="fixed inset-0 z-10 w-full overflow-y-auto flex justify-center items-center px-10">
+            <div className="fixed inset-0 z-10 w-11/12 overflow-y-auto mx-auto flex justify-center items-center px-20">
                 <div
-                    className={`relative bg-teal-300 w-full py-24 rounded-lg shadow-md shadow-teal-50 ${isClosing ? "animate-slide-up" : "animate-slide-down"}`}
+                    className={`relative bg-teal-300 w-full pb-16 pt-8 rounded-lg  ${isClosing ? "animate-slide-up" : "animate-slide-down"}`}
                     onAnimationEnd={onAnimationEnd} // Ensure component is removed after animation
                 >
-                    <div className="max-w-7xl mx-auto">
+                    <div className="max-w-7xl mx-auto flex justify-between">
                         <button className="flex gap-1 text-gray-800" onClick={handleBackButtonClick}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                             </svg>
                             Back
                         </button>
+
+                        <button className="flex gap-1 text-gray-800" onClick={handleBackButtonClick}>
+
+                            Next
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+
+                        </button>
                     </div>
+
+                    <h2 className="text-9xl text-center font-bold tracking-wide text-white sm:text-6xl font-porietOne">
+                        Hi<span className="text-red-600">,</span> nice to meet you<span className="text-red-600">!</span>
+                    </h2>
+
+                    <FlipCardComponent />
 
                     <div className="flex flex-col relative">
                         {/* Line Animation */}
                         <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
 
-                        <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-12 font-porietOne animate-clip-path-reveal-1">
-                            10 Fun Facts About Me
+                        <h2 className="text-6xl text-center pt-6 pb-10 font-bold tracking-wide text-white sm:text-6xl  font-porietOne animate-clip-path-reveal-1">
+                            10 Fun Facts About Me ;)
                         </h2>
                     </div>
 
@@ -53,14 +71,14 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
                         </div>
                     </div>
 
-                    <div className="mt-20 max-w-7xl mx-auto">
+                    <div className="mt-16 max-w-7xl mx-auto">
                         <p className="text-center text-sm text-gray-800 font-normal italic">
                             Outside of coding, I’m a proud mom who speaks five languages (Azerbaijani, Russian, English, Turkish, and Spanish). With over 15 years of customer service experience, I’m used to collaborating with diverse teams, communicating effectively, and building strong relationships. I’m always looking for ways to grow, both professionally and personally.
                         </p>
                     </div>
 
                     <div className="mt-8">
-                        <p className="text-center text-lg text-gray-800 font-semibold">
+                        <p className="text-center text-xl text-gray-800 font-semibold">
                             Always learning<span className="text-red-600">,</span> always growing<span className="text-red-600">.</span>
                         </p>
                     </div>
