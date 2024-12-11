@@ -8,7 +8,7 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
     return (
         <>
             {/* Modal Background */}
-            <div className="fixed inset-0 bg-gray-800/75 transition-opacity" aria-hidden="true"></div>
+            <div className="fixed inset-0 bg-gray-800/50 transition-opacity" aria-hidden="true"></div>
 
             <div className="fixed inset-0 z-10 w-full overflow-y-auto flex justify-center items-center px-10">
                 <div
@@ -28,7 +28,7 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
                         {/* Line Animation */}
                         <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
 
-                        <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-12 font-noto animate-clip-path-reveal-1">
+                        <h2 className="text-9xl text-center mb-6 font-bold tracking-wide text-white sm:text-6xl pb-12 font-porietOne animate-clip-path-reveal-1">
                             10 Fun Facts About Me
                         </h2>
                     </div>

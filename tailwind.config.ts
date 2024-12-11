@@ -43,6 +43,7 @@ export default {
       },
       fontFamily: {
         noto: ['"Noto Sans"', "sans-serif"],
+        porietOne: ["Poiret One", "sans-serif"],
         source: ['"Source Code Pro"', "serif"], // Source Code Pro font
       },
       colors: {},
