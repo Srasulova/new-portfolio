@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-type NavbarProps = {
-    setIsAboutMeOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
-export default function Navbar({ setIsAboutMeOpen }: NavbarProps) {
+type NavbarProps = {
+    setActiveModal: React.Dispatch<React.SetStateAction<string | null>>;
+};
+
+
+export default function Navbar({ setActiveModal }: NavbarProps) {
     return (
         <>
             <nav className="flex flex-1 flex-col" aria-label="">
@@ -13,7 +15,7 @@ export default function Navbar({ setIsAboutMeOpen }: NavbarProps) {
                         <Link
                             href="#aboutMe"
                             className="group tracking-wider font-porietOne flex gap-x-3 rounded-md p-6 text-8xl  relative"
-                            onClick={() => setIsAboutMeOpen(true)}
+                            onClick={() => setActiveModal("aboutMe")}
                         >
 
                             {/* Wrapper for the text */}
@@ -43,8 +45,9 @@ export default function Navbar({ setIsAboutMeOpen }: NavbarProps) {
                     <li>
 
                         <Link
-                            href="#"
+                            href="#myTechStack"
                             className="group tracking-wider font-porietOne flex gap-x-3 rounded-md p-6 text-8xl  text-teal-300 relative"
+                            onClick={() => setActiveModal("myTechStack")}
                         >
                             {/* Wrapper for the text */}
                             <span

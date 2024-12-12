@@ -3,10 +3,10 @@ import Navbar from "./navbar";
 import ResumeButton from "./resumeButton";
 
 type HeroProps = {
-    setIsAboutMeOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    setActiveModal: React.Dispatch<React.SetStateAction<string | null>>;
 };
 
-export default function Hero({ setIsAboutMeOpen }: HeroProps) {
+export default function Hero({ setActiveModal }: HeroProps) {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -46,7 +46,7 @@ export default function Hero({ setIsAboutMeOpen }: HeroProps) {
                         </div>
                     </div>
                     <div className="mr-24">
-                        <Navbar setIsAboutMeOpen={setIsAboutMeOpen} />
+                        <Navbar setActiveModal={setActiveModal} />
                     </div>
                 </div>
             )}

@@ -2,12 +2,12 @@ import FlipCardComponent from "./cards";
 
 
 type AboutMeProps = {
-    handleBackButtonClick: () => void;
+    handleCloseModal: () => void;
     isClosing: boolean;
     onAnimationEnd: () => void;
 };
 
-export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationEnd }: AboutMeProps) {
+export default function AboutMe({ handleCloseModal, isClosing, onAnimationEnd }: AboutMeProps) {
     return (
         <>
             {/* Modal Background */}
@@ -19,14 +19,14 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
                     onAnimationEnd={onAnimationEnd} // Ensure component is removed after animation
                 >
                     <div className="max-w-7xl mx-auto flex justify-between">
-                        <button className="flex gap-1 text-gray-800" onClick={handleBackButtonClick}>
+                        <button className="flex gap-1 text-gray-800" onClick={handleCloseModal}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                             </svg>
                             Back
                         </button>
 
-                        <button className="flex gap-1 text-gray-800" onClick={handleBackButtonClick}>
+                        <button className="flex gap-1 text-gray-800" onClick={handleCloseModal}>
 
                             Next
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">

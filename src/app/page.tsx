@@ -6,33 +6,30 @@ import Hero from "./components/hero";
 import MyTechStack from "./components/myTechStack";
 
 export default function Home() {
-  const [isAboutMeOpen, setIsAboutMeOpen] = useState<boolean>(false);
+  const [activeModal, setActiveModal] = useState<string | null>(null);
   const [isClosing, setIsClosing] = useState<boolean>(false);
 
-  const handleBackButtonClick = () => {
-    // Set isClosing to true to trigger the slide-up animation
-    setIsClosing(true);
 
-    // Delay setting isAboutMeOpen to false to wait for the animation to complete
+  const handleCloseModal = () => {
+    setIsClosing(true);
     setTimeout(() => {
-      setIsAboutMeOpen(false); // Hide the component after the animation
-      setIsClosing(false); // Reset the closing state
-    }, 1000); // Adjust this duration to match your animation duration
+      setActiveModal(null);
+      setIsClosing(false);
+    }, 1000);
   };
+
 
   return (
     <div>
       <main>
-        <Hero setIsAboutMeOpen={setIsAboutMeOpen} />
-        {isAboutMeOpen && (
-          <AboutMe
-            handleBackButtonClick={handleBackButtonClick}
-            isClosing={isClosing}
-            onAnimationEnd={() => { }}
-          />
+        <Hero setActiveModal={setActiveModal} />
+        {activeModal === "aboutMe" && (
+          <AboutMe handleCloseModal={handleCloseModal} isClosing={isClosing} onAnimationEnd={() => { }} />
+        )}
+        {activeModal === "myTechStack" && (
+          <MyTechStack handleCloseModal={handleCloseModal} isClosing={isClosing} onAnimationEnd={() => { }} />
         )}
 
-        <MyTechStack />
       </main>
     </div>
   );
