@@ -47,7 +47,7 @@ export default function AboutMe({ handleBackButtonClick, isClosing, onAnimationE
                         <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
 
                         <h2 className="text-6xl text-center pt-6 pb-10 font-bold tracking-wide text-white sm:text-6xl  font-porietOne animate-clip-path-reveal-1">
-                            10 Fun Facts About Me ;)
+                            10 Fun Facts About Me
                         </h2>
                     </div>
 

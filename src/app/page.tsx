@@ -3,6 +3,7 @@
 import { useState } from "react";
 import AboutMe from "./components/aboutMe";
 import Hero from "./components/hero";
+import MyTechStack from "./components/myTechStack";
 
 export default function Home() {
   const [isAboutMeOpen, setIsAboutMeOpen] = useState<boolean>(false);
@@ -30,6 +31,8 @@ export default function Home() {
             onAnimationEnd={() => { }}
           />
         )}
+
+        <MyTechStack />
       </main>
     </div>
   );
