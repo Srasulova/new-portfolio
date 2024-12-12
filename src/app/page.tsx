@@ -4,6 +4,7 @@ import { useState } from "react";
 import AboutMe from "./components/aboutMe";
 import Hero from "./components/hero";
 import MyTechStack from "./components/myTechStack";
+import Experience from "./components/experience";
 
 export default function Home() {
   const [activeModal, setActiveModal] = useState<string | null>(null);
@@ -21,7 +22,7 @@ export default function Home() {
 
   return (
     <div>
-      <main>
+      <main className="overflow-auto w-full h-full">
         <Hero setActiveModal={setActiveModal} />
         {activeModal === "aboutMe" && (
           <AboutMe handleCloseModal={handleCloseModal} isClosing={isClosing} onAnimationEnd={() => { }} />
@@ -29,6 +30,11 @@ export default function Home() {
         {activeModal === "myTechStack" && (
           <MyTechStack handleCloseModal={handleCloseModal} isClosing={isClosing} onAnimationEnd={() => { }} />
         )}
+
+        {activeModal === "experience" && (
+          <Experience handleCloseModal={handleCloseModal} isClosing={isClosing} onAnimationEnd={() => { }} />
+        )}
+
 
       </main>
     </div>

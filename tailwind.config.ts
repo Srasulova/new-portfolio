@@ -15,6 +15,9 @@ export default {
         "clip-path-reveal-1": "clipPathReveal 3s ease infinite alternate",
         line: "lineAnimation 3s ease infinite alternate",
         "gradient-border": "gradient-border 6s ease infinite", // Add gradient animation
+        "slide-in-left": "slideInLeft 1s ease-out forwards",
+        "slide-in-right": "slideInRight 1s ease-out forwards",
+        "slide-in-bottom": "slideInBottom 1s ease-out forwards",
       },
       keyframes: {
         slideDown: {
@@ -24,6 +27,18 @@ export default {
         slideUp: {
           "0%": { transform: "translateY(0)", opacity: "1" },
           "100%": { transform: "translateY(-100%)", opacity: "0" },
+        },
+        slideInLeft: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        slideInBottom: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
         clipPathReveal: {
           "0%, 25%": {
