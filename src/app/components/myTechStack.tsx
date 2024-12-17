@@ -31,15 +31,6 @@ export default function MyTechStack({ handleCloseModal, isClosing, onAnimationEn
                         </svg>
                         Back
                     </button>
-
-                    <button className="flex gap-1 text-teal-300" onClick={handleCloseModal}>
-
-                        Next
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#5eead4" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#5eead4" className="size-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                        </svg>
-
-                    </button>
                 </div>
 
                 <div className="flex flex-col relative">

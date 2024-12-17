@@ -12,7 +12,7 @@ export default {
       animation: {
         "slide-down": "slideDown 1s ease-in-out",
         "slide-up": "slideUp 1s ease-in-out",
-        "clip-path-reveal-1": "clipPathReveal 3s ease infinite alternate",
+        "clip-path-reveal-1": "clipPathReveal 3s ease-out forwards",
         line: "lineAnimation 3s ease infinite alternate",
         "gradient-border": "gradient-border 6s ease infinite", // Add gradient animation
         "slide-in-left": "slideInLeft 1s ease-out forwards",
