@@ -74,20 +74,28 @@ export default function MyProjects({
                                 transitionTime={5000}
                                 interval={8000}
                                 className="w-full"
+                                renderItem={(item, options) => {
+                                    const isSelected = options?.isSelected ?? false;
+                                    return (
+                                        <div
+                                            className={`flex flex-col items-center transition-transform duration-1000 ${isSelected ? "scale-100" : "scale-75"}`}
+                                        >
+                                            {item}
+                                        </div>
+                                    );
+                                }}
                                 renderIndicator={(clickHandler, isSelected, index, label) => (
                                     <li
                                         key={index}
                                         onClick={clickHandler}
-                                        className={`inline-block w-2 h-2 mx-6 rounded-full cursor-pointer ${isSelected ? "bg-red-600" : "bg-gray-400"}`}
+                                        className={`inline-block w-2 h-2 mx-8 rounded-full cursor-pointer ${isSelected ? "bg-red-600" : "bg-gray-300"
+                                            }`}
                                         aria-label={label}
                                     />
                                 )}
                             >
                                 {projects.map((project, index) => (
-                                    <div
-                                        key={index}
-                                        className={`text-center mb-20 py-4 rounded-lg ${index === 0 ? "border-b-4 border-teal-300" : ""}`}
-                                    >
+                                    <div key={index} className="text-center mb-20 border-b-2 rounded-lg border-teal-300 py-4">
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -121,6 +129,7 @@ export default function MyProjects({
                                     </div>
                                 ))}
                             </Carousel>
+
 
                         )}
                     </div>
