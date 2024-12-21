@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Props } from "../types";
+import projects from "../projects";
 
 /* eslint-disable @next/next/no-img-element */
 export default function MyProjects({
@@ -20,7 +21,6 @@ export default function MyProjects({
 
     return (
         <>
-            {/* Modal Background */}
             <div
                 className="fixed inset-0 bg-gray-800/50 transition-opacity"
                 aria-hidden="true"
@@ -30,7 +30,7 @@ export default function MyProjects({
                 <div
                     className={`relative bg-gray-800 w-full pb-12 pt-6 rounded-lg border border-teal-300 ${isClosing ? "animate-slide-up" : "animate-slide-down"
                         }`}
-                    onAnimationEnd={handleSlideDownEnd} // Ensure component is removed after animation
+                    onAnimationEnd={handleSlideDownEnd}
                 >
                     <div className="max-w-7xl mx-auto flex justify-between">
                         <button
@@ -56,97 +56,72 @@ export default function MyProjects({
                     </div>
 
                     <div className="flex flex-col relative">
-                        {/* Line Animation */}
-                        <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line "></div>
-
-                        <h2 className="text-9xl py-4 text-center font-bold tracking-wide text-white sm:text-6xl font-porietOne animate-clip-path-reveal-1">
+                        <div className="absolute top-[calc(100%-2px)] w-full h-[4px] bg-red-600 animate-line"></div>
+                        <h2 className="text-9xl py-3 text-center font-bold tracking-wide text-white sm:text-6xl font-porietOne animate-clip-path-reveal-1">
                             My Projects
                         </h2>
                     </div>
 
-                    {/* Carousel */}
-                    <div className="flex max-w-7xl items-center justify-center mx-auto pt-10">
+                    <div className="">
                         {showProjects && (
                             <Carousel
                                 showArrows
                                 showThumbs={false}
                                 infiniteLoop
                                 autoPlay
-                                interval={5000}
-                                className="w-2/3"
+                                centerMode
+                                centerSlidePercentage={50}
+                                transitionTime={5000}
+                                interval={8000}
+                                className="w-full"
+                                renderIndicator={(clickHandler, isSelected, index, label) => (
+                                    <li
+                                        key={index}
+                                        onClick={clickHandler}
+                                        className={`inline-block w-2 h-2 mx-6 rounded-full cursor-pointer ${isSelected ? "bg-red-600" : "bg-gray-400"}`}
+                                        aria-label={label}
+                                    />
+                                )}
                             >
-                                {/* Item 1 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/moneyball.png"
-                                        alt="moneyball"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 1 Description
-                                    </p>
-                                </div>
-
-                                {/* Item 2 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/messagin-app.png"
-                                        alt="Project 2"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 2 Description
-                                    </p>
-                                </div>
-
-                                {/* Item 3 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/ratatouille.png"
-                                        alt="Project 3"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 3 Description
-                                    </p>
-                                </div>
-
-                                {/* Item 4 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/ratatouille.png"
-                                        alt="Project 3"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 3 Description
-                                    </p>
-                                </div>
-
-                                {/* Item 5 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/ratatouille.png"
-                                        alt="Project 3"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 3 Description
-                                    </p>
-                                </div>
-
-                                {/* Item 6 */}
-                                <div className="flex flex-col items-center">
-                                    <img
-                                        src="/ratatouille.png"
-                                        alt="Project 3"
-                                        className="rounded-lg"
-                                    />
-                                    <p className="mt-4 text-white font-medium">
-                                        Project 3 Description
-                                    </p>
-                                </div>
+                                {projects.map((project, index) => (
+                                    <div
+                                        key={index}
+                                        className={`text-center mb-20 py-4 rounded-lg ${index === 0 ? "border-b-4 border-teal-300" : ""}`}
+                                    >
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="rounded-lg h-96 w-full object-cover"
+                                        />
+                                        <h3 className="mt-3 text-white font-bold">{project.title}</h3>
+                                        <p className="mt-1 text-white">{project.description}</p>
+                                        <div className="mt-2">
+                                            <p className="text-teal-300 font-medium">
+                                                Tech Stack: {project.techStack.join(", ")}
+                                            </p>
+                                        </div>
+                                        <div className="mt-3 flex gap-4 justify-center">
+                                            <a
+                                                href={project.projectLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-teal-300 underline"
+                                            >
+                                                View Project
+                                            </a>
+                                            <a
+                                                href={project.githubLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-teal-300 underline"
+                                            >
+                                                GitHub
+                                            </a>
+                                        </div>
+                                    </div>
+                                ))}
                             </Carousel>
+
                         )}
                     </div>
                 </div>
