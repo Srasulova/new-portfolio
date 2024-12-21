@@ -105,8 +105,9 @@ export default function Navbar({ setActiveModal }: NavbarProps) {
 
                     <li>
                         <Link
-                            href="#"
+                            href="#projects"
                             className="group tracking-wider font-porietOne flex gap-x-3 rounded-md p-6 text-8xl  text-teal-300 relative"
+                            onClick={() => setActiveModal("projects")}
                         >
                             {/* Wrapper for the text */}
                             <span
