@@ -9,6 +9,14 @@ const projects = [
     githubLink: "https://github.com/Srasulova/Moneyball",
   },
   {
+    image: "/devcast.png",
+    title: "Devcast FM",
+    description: "A data-driven application for analyzing baseball standings.",
+    techStack: ["React", "Node.js", "Tailwind CSS"],
+    projectLink: "https://devcast.fm/",
+    githubLink: "https://github.com/rdrigezariel/devcast_club",
+  },
+  {
     image: "/messagin-app.png",
     title: "Messaging App",
     description:
