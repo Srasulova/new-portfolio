@@ -20,7 +20,6 @@ export default function Home() {
     }, 1000);
   };
 
-
   return (
     <div>
       <main className="overflow-auto w-full h-full">
