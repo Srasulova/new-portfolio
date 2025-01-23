@@ -45,15 +45,10 @@ export default function MyTechStack({ handleCloseModal, isClosing, onAnimationEn
                 {/* tech stack divs */}
                 <div className="flex max-w-7xl items-center justify-center mx-auto pt-10">
                     <div
-                        className={`bg-teal-300 basis-2/5 py-12 pl-12 pr-28 ml-20 rounded-lg border-8 border-white ${showTechStack ? "animate-slide-in-left" : "opacity-0"
+                        className={`bg-teal-300 basis-3/6 py-12 pl-12 pr-28 ml-20 rounded-lg border-8 border-white ${showTechStack ? "animate-slide-in-left" : "opacity-0"
                             }`} >
 
-                        <p className="mb-3 tracking-wide text-gray-800">I love working with <strong> Next.js, React, TypeScript, and Tailwind</strong>—they’re my go-to tools for building sleek, user-friendly interfaces. On the backend, I’m at home with Node.js, Express, and SQL databases like PostgreSQL and MySQL, which let me tackle full-stack projects with confidence. I rely on Jest for testing to make sure my code is solid and reliable.
-
-                            I’m always building new apps with these technologies, not just to create something functional but to deepen my understanding and sharpen my skills. I’m also constantly exploring new tools and frameworks because, for me, this is just the beginning—there’s so much more I want to learn and grow into.</p>
-
-                        <p className="tracking-wide text-gray-800">I’m always building new apps with these technologies, not just to create something functional but to deepen my understanding and sharpen my skills. I’m also constantly exploring new tools and frameworks because, for me, this is just the beginning—there’s so much more I want to learn and grow into.</p>
-
+                        <p className="mb-3 tracking-wide text-lg text-gray-800">I love building sleek, user-friendly interfaces with <span className="font-semibold">Next.js, React, TypeScript, and Tailwind CSS</span>. On the backend, I work with Node.js, Express, and SQL databases like PostgreSQL and MySQL to create robust full-stack applications. I prioritize code quality with Jest for testing and am always exploring new tools and frameworks to expand my skills. This is just the beginning of my journey, and I’m excited to see where it takes me!</p>
 
                     </div>
 
@@ -63,66 +58,66 @@ export default function MyTechStack({ handleCloseModal, isClosing, onAnimationEn
                             }`}
                     >
                         <div className="grid grid-cols-2 gap-0.5  sm:mx-0 sm:rounded-2xl md:grid-cols-4">
-                            <div className="bg-teal-100/75 p-8">
-                                <img className="max-h-12 w-full object-contain" src="/html.png" alt="Transistor" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-8 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/html.png" alt="html" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/css.png" alt="Reform" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/css.png" alt="css" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/javascript.png" alt="Tuple" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/javascript.png" alt="javascript" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/typescript.png" alt="Laravel" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/typescript.png" alt="typescript" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/react.png" alt="Statamic" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/react.png" alt="react" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/python.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/python.png" alt="python" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/sql.png" alt="Statamic" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/sql.png" alt="sql" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/tailwind.png" alt="Statamic" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/tailwind.png" alt="tailwind" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/bootstrap.png" alt="Tuple" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/bootstrap.png" alt="bootstrap" width="158" height="48" />
                             </div>
 
-                            <div className="bg-teal-100/75 p-8">
-                                <img className="max-h-12 w-full object-contain" src="/jquery.png" alt="Transistor" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-8 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/jquery.png" alt="jquery" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/node.png" alt="Reform" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/node.png" alt="node" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/express.png" alt="Tuple" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/express.png" alt="express" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/flask.png" alt="Laravel" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/flask.png" alt="flask" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/postgres.png" alt="Laravel" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/postgres.png" alt="postgres" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/jest.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/jest.png" alt="jest" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/jasmine.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/jasmine.png" alt="jasmine" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/git.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/git.png" alt="git" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/adobe.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/adobe.png" alt="photoshop" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/wordpress.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/wordpress.png" alt="wordpress" width="158" height="48" />
                             </div>
-                            <div className="bg-teal-100/75 p-6">
-                                <img className="max-h-12 w-full object-contain" src="/insomnia.png" alt="SavvyCal" width="158" height="48" />
+                            <div className="bg-teal-100/75 p-6 hover:bg-teal-200/75">
+                                <img className="max-h-12 w-full object-contain" src="/insomnia.png" alt="insomnia" width="158" height="48" />
                             </div>
 
                         </div>

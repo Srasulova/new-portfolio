@@ -21,10 +21,10 @@ const FlipCardComponent = () => {
                             <div className="absolute inset-0 h-full w-full rounded-xl bg-gray-800 text-white flex items-center justify-center px-5 py-3 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                                 <p className="text-lg text-gray-300 mt-2">
                                     {index === 0
-                                        ? "I am currently a front-end developer with focus on React, but I’m also comfortable with full-stack work. My goal is to build clean, functional interfaces while understanding the full system behind them."
+                                        ? "Full Stack Software Engineer with a focus on Front-End Development"
                                         : index === 1
-                                            ? "I value clear communication and enjoy collaborating with others. Taking on challenges and learning from my team is where I do my best work."
-                                            : "I’m curious and quick to pick up new tools. I’m always eager to understand not just how things work, but why, so I can adapt and contribute effectively."}
+                                            ? "I solve tricky problems creatively, continuously learn, and always aim to improve my work."
+                                            : "I build web applications from concept to deployment. I can develop full-stack projects, create responsive interfaces, and solve complex technical challenges."}
                                 </p>
                             </div>
                         </div>
