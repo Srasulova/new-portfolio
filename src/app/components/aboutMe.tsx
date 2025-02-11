@@ -44,13 +44,13 @@ export default function AboutMe({ handleCloseModal, isClosing, onAnimationEnd }:
                                 <li className="flex gap-3 items-end">
                                     <span className="text-6xl text-red-600 font-black">1</span>
                                     <p className="leading-relaxed px-1">
-                                        Give me a bug or an error I’ve never seen before, and I’ll show you the power of stubborn optimism. If it takes 100 tries, so be it—<strong>I’ll get it working</strong>, and I’ll learn something new every time.
+                                        I love solving complex problems… but still struggle to decide what to watch on Netflix.
                                     </p>
                                 </li>
                                 <li className="flex gap-3 items-end">
                                     <span className="text-6xl text-red-600 font-black">10</span>
                                     <p className="leading-relaxed">
-                                        I’ve always had an eye for <strong>making things work better</strong>—whether it’s simplifying a process, cleaning up code, or organizing my thoughts. If it can be optimized, I’ll find a way to make it flow a little smoother.
+                                        I might not have all the answers, but I’m always ready to figure it out.
                                     </p>
                                 </li>
                             </ul>
@@ -59,15 +59,20 @@ export default function AboutMe({ handleCloseModal, isClosing, onAnimationEnd }:
 
                     <div className="mt-16 max-w-7xl mx-auto">
                         <p className="text-center text-sm text-white font-normal italic">
-                            Outside of coding, I’m a proud mom who speaks five languages (Azerbaijani, Russian, English, Turkish, and Spanish). With over 15 years of customer service experience, I’m used to collaborating with diverse teams, communicating effectively, and building strong relationships. I’m always looking for ways to grow, both professionally and personally.
+                            Outside of coding, I&apos;m a proud mom who speaks five languages (Azerbaijani, Russian, English, Turkish, and Spanish). With 15+ years in customer service, I&apos;m all about teamwork, clear communication, and building connections. I&apos;m constantly learning and growing, both in my career and as a person.
                         </p>
                     </div>
 
                     <div className="mt-8">
-                        <p className="text-center text-xl text-teal-300 font-semibold">
-                            Always learning<span className="text-red-600">,</span> always growing<span className="text-red-600">.</span>
+                        <blockquote className="text-center text-xl text-teal-300 font-medium">
+                            <span className="text-red-600">&quot;</span> The best way to appreciate your job is to imagine yourself without one.<span className="text-red-600">&quot;</span>
+                        </blockquote>
+                        <p className="text-center text-lg text-red-600 font-medium mt-2">
+                            — Oscar Wilde
                         </p>
                     </div>
+
+
                 </div>
             </div>
         </>
