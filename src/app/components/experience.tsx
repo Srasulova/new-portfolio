@@ -19,7 +19,7 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
 
         <div className="fixed inset-0 z-10 w-10/12 overflow-y-auto mx-auto flex justify-center items-center">
             <div
-                className={`relative bg-gray-800 w-full py-6 rounded-lg border border-teal-300  ${isClosing ? "animate-slide-up" : "animate-slide-down"}`}
+                className={`relative overflow-y-auto h-5/6 bg-gray-800 w-full py-6 rounded-lg border border-teal-300  ${isClosing ? "animate-slide-up" : "animate-slide-down"}`}
                 onAnimationEnd={handleSlideDownEnd} // Ensure component is removed after animation
 
             >
@@ -52,19 +52,58 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
                     <div className="relative flex flex-col">
 
                         {/* Experience Item 1 */}
+                        <div className="flex items-center justify-end -mt-3">
+                            {/* Dot */}
+                            <div className="relative flex items-center justify-center -mr-3">
+                                {/* Outer pulsing animation */}
+                                <span className="absolute inline-flex h-5 w-5 rounded-full bg-red-600 opacity-75 animate-ping"></span>
+                                {/* Main dot */}
+                                <span className="relative inline-flex h-6 w-6 bg-red-600 rounded-full border-4 border-gray-800"></span>
+                            </div>
+                            <div className="w-1/2 text-left pl-8">
+                                <h3 className="text-xl font-semibold text-teal-300">Web Solutions Developer</h3>
+                                <p className="text-xs text-gray-200">Item Inc.</p>
+                                <p className="text-xs text-gray-400">Feb 2025 - <span className="italic">present</span></p>
+                                <ul className="mt-2 text-sm text-gray-300">
+                                    <li>
+                                        iPaaS Integration and API: Manage Celigo integration to keep BigCommerce,
+                                        ERP, and other systems in sync.
+                                    </li>
+                                    <li>
+                                        JavaScript: Build, troubleshoot, and optimize custom code for dynamic UIs.
+                                    </li>
+                                    <li>
+                                        Custom Apps: Develop and maintain front-end components for various apps.
+                                    </li>
+                                    <li>
+                                        Backend: Assist with Laravel Blade views and other back-end needs.
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Experience Item 2 */}
                         <div className="flex items-center -mt-1">
                             <div className="w-1/2 text-right pr-8">
                                 <h3 className="text-xl font-semibold text-teal-300">Software Engineer</h3>
                                 <p className="text-xs text-gray-200">Sync Tech Solutions, Inc </p>
                                 <p className="text-xs text-gray-400">Aug 2024 - present</p>
                                 <ul className="mt-2 text-sm text-gray-300">
-                                    <li>Engineered Python scripts to automate data processing and generate analytical insights from enterprise datasets.
+                                    <li>
+                                        Automated data processing and generated insights using Python scripts.
                                     </li>
-                                    <li>Developed SQL queries integrated into automated reporting pipelines with Python.
+                                    <li>
+                                        Wrote SQL queries for analytics and reporting, integrated into Python pipelines.
                                     </li>
-                                    <li>Delivered software support and enhancements, reducing issue resolution time by 25%.
+                                    <li>
+                                        Provided support, maintenance, and enhancements for new/existing systems.
                                     </li>
-                                    <li>Collaborated with clients to gather requirements, delivering customized solutions meeting 90% of objectives.
+                                    <li>
+                                        Troubleshot and debugged issues, demonstrating strong problem-solving skills.
+                                    </li>
+                                    <li>
+                                        Worked with clients to gather requirements and refine software solutions.
                                     </li>
                                 </ul>
 
@@ -79,7 +118,7 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
 
                         </div>
 
-                        {/* Experience Item 2 */}
+                        {/* Experience Item 3 */}
                         <div className="flex items-center justify-end -mt-3">
                             {/* Dot */}
                             <div className="relative flex items-center justify-center -mr-3">
@@ -93,39 +132,47 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
                                 <p className="text-xs text-gray-200">Springboard</p>
                                 <p className="text-xs text-gray-400">Jan 2024 - Oct 2024</p>
                                 <ul className="mt-2 text-sm text-gray-300">
-                                    <li>Designed, developed, and deployed two full-stack applications with React and Node.js.
+                                    <li>
+                                        Created full-stack applications from concept to production.
                                     </li>
-                                    <li>Built RESTful APIs and backend services with Node.js, Express, and Python and optimized SQL databases to ensure robust communication between services.
+                                    <li>
+                                        Built responsive UIs with JavaScript, TypeScript, and React.
                                     </li>
-                                    <li>Developed RESTful APIs and backend services with Node.js, Express, and Python.
+                                    <li>
+                                        Developed RESTful APIs with Node.js, Express, and Python.
                                     </li>
-                                    <li> Practiced test-driven development, writing over 50 unit tests for application reliability.
-
+                                    <li>
+                                        Designed and optimized SQL-based databases.
                                     </li>
-                                    <li> Contributed to Agile teams, delivering features ahead of schedule in 90% of sprints.
-
+                                    <li>
+                                        Followed TDD and collaborated in Agile teams.
                                     </li>
 
                                 </ul>
                             </div>
                         </div>
 
-                        {/* Experience Item 3 */}
+                        {/* Experience Item 4 */}
                         <div className="flex items-center -mt-3">
                             <div className="w-1/2 text-right pr-8">
                                 <h3 className="text-xl font-semibold text-teal-300">Front-End Developer</h3>
                                 <p className="text-xs text-gray-200">La Leche League USA </p>
                                 <p className="text-xs text-gray-400">Oct 2023 - Mar 2024</p>
                                 <ul className="mt-2 text-sm text-gray-300">
-                                    <li>Led the creation of a responsive admin dashboard with React and Tailwind CSS.
+                                    <li>
+                                        Led the creation of a responsive admin dashboard with React and Tailwind CSS.
                                     </li>
-                                    <li>Migrated legacy jQuery components to modern React architecture.
+                                    <li>
+                                        Migrated legacy jQuery components to modern React architecture.
                                     </li>
-                                    <li>Streamlined development with reusable components, reducing feature delivery time by 30%.
+                                    <li>
+                                        Cut development time by creating reusable components.
                                     </li>
-                                    <li>Designed and integrated RESTful APIs to support seamless front-end and back-end communication.
+                                    <li>
+                                        Ensured smooth data flow via front-end/back-end API integration.
                                     </li>
-                                    <li>Crafted and implemented a MySQL database schema with over 15 tables, supporting the organization’s operational requirements.
+                                    <li>
+                                        Crafted MySQL schema spanning 15+ tables.
                                     </li>
                                 </ul>
 
@@ -142,7 +189,7 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
 
 
 
-                        {/* Experience Item 4 */}
+                        {/* Experience Item 5 */}
                         <div className="flex items-center justify-end -mt-3">
                             {/* Dot */}
                             <div className="relative flex items-center justify-center -mr-3">
@@ -162,22 +209,28 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
                             </div>
                         </div>
 
-                        {/* Experience Item 4 */}
+                        {/* Experience Item 5 */}
                         <div className="flex items-center justify-start -mt-3">
                             <div className="w-1/2 text-right pr-8">
                                 <h3 className="text-xl font-semibold text-teal-300">Quality Assurance Supervisor </h3>
                                 <p className="text-xs text-gray-200">Sentry Management Solutions </p>
                                 <p className="text-xs text-gray-400">Jan 2018 - Jul 2022</p>
                                 <ul className="mt-2 text-sm text-gray-300">
-                                    <li>Implemented digital transformation projects, introducing and customizing CRM systems.
+                                    <li>
+                                        Led digital transformation projects, customizing new CRM systems.
                                     </li>
-                                    <li>Designed quality assurance workflows, identifying trends and driving process improvements.
+                                    <li>
+                                        Launched training initiatives that reduced resolution time by 25%.
                                     </li>
-                                    <li>Supervised and trained a team of 100+ agents, boosting productivity by 30%.
+                                    <li>
+                                        Designed QA workflows using data analytics to identify trends.
                                     </li>
-                                    <li>Authored detailed operational documentation to ensure consistency across teams.
+                                    <li>
+                                        Developed thorough documentation using content management systems.
                                     </li>
-
+                                    <li>
+                                        Collaborated with IT to deploy new software for customer service operations.
+                                    </li>
                                 </ul>
                             </div>
                             {/* Dot */}

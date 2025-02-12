@@ -99,7 +99,7 @@ export default function MyProjects({
                                         alt={project.title}
                                         className="rounded-lg h-96 w-full object-cover"
                                     />
-                                    <h3 className="mt-3 text-white text-xl tracking-wide font-semibold">{project.title}</h3>
+                                    <h3 className="mt-3 text-white text-2xl tracking-wide font-semibold">{project.title}</h3>
                                     <p className="mt-1 text-gray-100">{project.description}</p>
                                     <div className="mt-2">
                                         <p className="text-teal-300 font-medium">

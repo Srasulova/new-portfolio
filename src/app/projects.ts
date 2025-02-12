@@ -3,7 +3,7 @@ const projects = [
   {
     image: "/moneyball.png",
     title: "Moneyball Project",
-    description: "A data-driven application for analyzing baseball standings.",
+    description: "A web application that delivers up-to-date baseball stats and standings, with login and sign-up features to track your favorite teams and players.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -25,11 +25,21 @@ const projects = [
     projectLink: "https://devcast.fm/",
     githubLink: "https://github.com/rdrigezariel/devcast_club",
   },
+
+  {
+    image: "/portfolio.png",
+    title: "My old portfolio",
+    description:
+      "The first version of my portfolio, check how it all started. ",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    projectLink: "https://srasulova.github.io/",
+    githubLink: "https://github.com/Srasulova/srasulova.github.io",
+  },
   {
     image: "/messagin-app.png",
-    title: "Messaging App",
+    title: "Borderless Messaging App",
     description:
-      "A real-time chat application with group and private messaging.",
+      "A purely front-end WhatsApp-inspired chat that translates messages in real time to each user’s preferred language.",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -42,7 +52,7 @@ const projects = [
   {
     image: "/ratatouille.png",
     title: "Ratatouille Project",
-    description: "A recipe-sharing platform for aspiring chefs.",
+    description: "A location-based restaurant discovery app where users can search by address, manage wishlists and visited spots, and leave or edit reviews.",
     techStack: [
       "Python",
       "Flask",
@@ -59,7 +69,7 @@ const projects = [
   {
     image: "/wombot.png",
     title: "Wombot",
-    description: "An intelligent chatbot for customer support automation.",
+    description: "An AI-driven security solution using facial recognition to grant entry only to authorized individuals, record access attempts, and send alerts for unauthorized entries.",
     techStack: [
       "Next.js",
       "TypeScript",
