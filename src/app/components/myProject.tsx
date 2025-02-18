@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Props } from "../types";
 import projects from "../projects";
 
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-elementt */
 export default function MyProjects({
     handleCloseModal,
     isClosing,
