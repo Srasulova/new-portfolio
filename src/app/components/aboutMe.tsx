@@ -78,3 +78,8 @@ export default function AboutMe({ handleCloseModal, isClosing, onAnimationEnd }:
         </>
     );
 }
+
+
+// TODO: update texts on cards
+// update facts about me
+// TODO: make the page responsive

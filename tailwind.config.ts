@@ -13,7 +13,7 @@ export default {
         "slide-down": "slideDown 1s ease-in-out",
         "slide-up": "slideUp 1s ease-in-out",
         "clip-path-reveal-1": "clipPathReveal 3s ease-out forwards",
-        line: "lineAnimation 3s ease infinite alternate",
+        line: "lineAnimation 6s ease-in-out forwards", // Add line animation
         "gradient-border": "gradient-border 6s ease infinite", // Add gradient animation
         "slide-in-left": "slideInLeft 1s ease-out forwards",
         "slide-in-right": "slideInRight 1s ease-out forwards",
@@ -48,14 +48,17 @@ export default {
             clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", // Fully visible
           },
         },
+
         lineAnimation: {
-          "0%": { transform: "scaleX(0)", top: "calc(100% - 2px)" },
-          "15%": { transform: "scaleX(0)", top: "calc(100% - 2px)" },
-          "20%, 25%": { transform: "scaleX(1)", top: "calc(100% - 2px)" },
-          "50%": { transform: "scaleX(1)", top: "0" },
-          "70%": { transform: "scaleX(0.2)", top: "0" },
-          "80%, 100%": { transform: "scaleX(0.2)", top: "0" },
-        },
+  "0%": { transform: "scaleX(0.2)", top: "calc(100% - 2px)" }, // Start small at bottom
+  "10%": { transform: "scaleX(1)", top: "calc(100% - 2px)" },   // Expand at bottom
+  "20%": { transform: "scaleX(1)", top: "0" },                  // Slide to top
+  "30%": { transform: "scaleX(0.2)", top: "0" },                // Shrink at top
+  "40%": { transform: "scaleX(1)", top: "0" },                  // Expand at top
+  "50%": { transform: "scaleX(1)", top: "calc(100% - 2px)" },   // Slide to bottom
+  "60%": { transform: "scaleX(0.2)", top: "calc(100% - 2px)" }, // Shrink at bottom
+  "100%": { transform: "scaleX(0.2)", top: "calc(100% - 2px)" },// Remain small at bottom
+},
         "gradient-border": {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
@@ -70,3 +73,5 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+
+// TODO: fix the line animation to be more smooth

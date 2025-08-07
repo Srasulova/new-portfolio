@@ -132,3 +132,12 @@ export default function MyProjects({
         </>
     );
 }
+
+
+// TODO: make the page responsive
+// TODO: add challenge descriptions to the projects
+// TODO: make the carousel infinite loop
+// TODO: make texts more visually appealing
+// TODO: add new projects
+// TODO: make carousel slower
+// TODO: make the arrows more visually appealing

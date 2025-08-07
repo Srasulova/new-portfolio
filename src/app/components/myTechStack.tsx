@@ -132,3 +132,9 @@ export default function MyTechStack({
         </>
     );
 }
+
+
+// TODO: add postman, and some other tools I learned
+// TODO: update the text
+// TODO: make the page responsive
+// TODO: add some box shadow to the tech stack divs on hover to add the 3D effect

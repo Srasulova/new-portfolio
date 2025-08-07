@@ -253,3 +253,8 @@ export default function Experience({ handleCloseModal, isClosing, onAnimationEnd
         </div >
     </>)
 }
+
+// TODO: make the page responsive
+// TODO: fix the margin on the line animation
+// TODO: change the color of the scrollbar
+// TODO: update the text on the experience
